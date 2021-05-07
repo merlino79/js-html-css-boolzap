@@ -5,7 +5,34 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Lato', sans-serif;
     height: 100vh;
-    background-image: linear-gradient(to bottom, #259688 0px, #259688 15vh, #DADBD4 15vh, #DADBD4 15vh);
+    background-image: linear-gradient(to bottom, #249688 0px, #249688 15vh, #DADBD4 15vh, #DADBD4 15vh);
+}
+
+.container {
+    width: 80%;
+    min-width: 900px;
+    height: 95%;
+    background-color: lawngreen;
+}
+
+.container .left,
+.container .right {
+    float: left;
+    height: 100%;
+    background-color: #DADBD4;
+}
+
+.container .left {
+    width: 35%;
+    background-color: wheat;
+}
+
+.container .right {
+    width: 65%;
+    background-color: thistle;
 }
