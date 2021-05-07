@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bd8216;
+}
+
+input {
+    display: block;
+    margin: 10px;
+}
+
+input:focus {
+    outline: 0;
+    ;
+}
+
+.colore {
+    color: rgb(50, 70, 33);
+}
+
+.colore1 {
+    color: rgb(49, 163, 97);
+}
+
+
+/* per farlo diventare maiuscolo nel html imput scrivere up */
+
+p.up {
+    text-transform: uppercase;
+}
