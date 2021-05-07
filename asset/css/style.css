@@ -13,6 +13,9 @@ body {
     background-image: linear-gradient(to bottom, #249688 0px, #249688 15vh, #DADBD4 15vh, #DADBD4 15vh);
 }
 
+
+/* <--------------Container-------------------->> */
+
 .container {
     width: 80%;
     min-width: 900px;
@@ -35,6 +38,13 @@ body {
 .container .right {
     width: 65%;
 }
+
+.container .right section {
+    height: calc(100% - 140px);
+}
+
+
+/* <--------------------------------------> */
 
 
 /* aside left */
@@ -116,9 +126,11 @@ form {
 form input {
     width: 95%;
     padding: 8px;
+    cursor: pointer;
     outline: none;
     border-radius: 7px;
     color: #6a7045;
+    background-color: white;
 }
 
 form i {
@@ -176,15 +188,30 @@ main .utente p {
 }
 
 
-/* <-----------------> */
+/* 
+<-----------------> section */
 
 section {
     background-image: url(../../asset/img/mine.jpg);
 }
 
-.container .right section {
-    height: calc(100% - 140px);
+section .ale-sx,
+section .ale-dx {
+    float: left;
+    padding: 20px;
+    width: 50%;
 }
+
+section input {
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* <--------------------------------->> */
 
 
 /* -----footer------ */
@@ -197,7 +224,9 @@ footer input {
     width: 570px;
     padding: 10px;
     outline: none;
+    cursor: pointer;
     border-radius: 12px;
+    border: none;
 }
 
 footer input i {
@@ -207,7 +236,7 @@ footer input i {
 .fa,
 .fas {
     font-weight: 900;
-    color: #8c979b;
+    color: #728C95;
     padding: 10px;
 }
 
