@@ -36,3 +36,98 @@ body {
     width: 65%;
     background-color: thistle;
 }
+
+
+/* aside left */
+
+.utente {
+    float: left;
+    padding: 10px;
+}
+
+.utente ul li h3 {
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.utente img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.utente ul,
+.notifiche ul,
+.fontaweson ul {
+    display: flex;
+    list-style: none;
+}
+
+.fontaweson i {
+    color: #B1B1B1;
+    margin-right: 10px;
+}
+
+
+/* notifiche */
+
+.notifiche {
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+    background-color: #8ED9FC;
+}
+
+.notifiche ul li h3 {
+    margin-left: 15px;
+}
+
+.notifiche a {
+    margin-left: 10px;
+}
+
+.notifiche i {
+    background-color: rgb(245, 236, 236);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.fa,
+.fas {
+    font-weight: 900;
+    color: #76DCFF;
+    padding: 10px;
+}
+
+
+/* ---------- */
+
+.fontaweson {
+    float: right;
+    padding: 20px;
+}
+
+
+/* main dx */
+
+aside header {
+    width: 100%;
+    height: 70px;
+    background-color: #DADBD4;
+}
+
+.container .right header,
+.container .right footer {
+    height: 70px;
+    background-color: #DADBD4;
+}
+
+section {
+    background-image: url(/asset/img/mine.jpg);
+    overflow: auto;
+}
+
+.container .right section {
+    height: calc(100% - 140px);
+}
