@@ -29,12 +29,11 @@ body {
 
 .container .left {
     width: 35%;
-    background-color: wheat;
+    background-color: #FFFFFF;
 }
 
 .container .right {
     width: 65%;
-    background-color: thistle;
 }
 
 
@@ -45,9 +44,9 @@ body {
     padding: 10px;
 }
 
-.utente ul li h3 {
+.utente ul li h3,
+.lista-utenti li h3 {
     padding: 5px;
-    margin-top: 5px;
     margin-left: 5px;
 }
 
@@ -57,6 +56,7 @@ body {
 }
 
 .utente ul,
+footer ul,
 .notifiche ul,
 .fontaweson ul {
     display: flex;
@@ -83,7 +83,9 @@ body {
 }
 
 .notifiche a {
-    margin-left: 10px;
+    margin-left: 13px;
+    color: rgb(126, 111, 111);
+    cursor: pointer;
 }
 
 .notifiche i {
@@ -98,6 +100,48 @@ body {
     font-weight: 900;
     color: #76DCFF;
     padding: 10px;
+}
+
+
+/* <--------------->inpunt */
+
+form {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+form input {
+    width: 95%;
+    padding: 8px;
+    outline: none;
+    border-radius: 7px;
+    color: #6a7045;
+}
+
+form i {
+    position: absolute;
+    left: 4%;
+}
+
+
+/* lista utenti */
+
+.lista-utenti img {
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.lista-utenti ul li {
+    border-bottom: 1px solid rgb(228, 220, 220);
+}
+
+.lista-utenti li {
+    display: flex;
 }
 
 
@@ -123,11 +167,50 @@ aside header {
     background-color: #DADBD4;
 }
 
+
+/* header dx */
+
+main .utente p {
+    color: #80817a;
+    margin-left: 10px;
+}
+
+
+/* <-----------------> */
+
 section {
-    background-image: url(/asset/img/mine.jpg);
-    overflow: auto;
+    background-image: url(../../asset/img/mine.jpg);
 }
 
 .container .right section {
     height: calc(100% - 140px);
+}
+
+
+/* -----footer------ */
+
+footer ul li {
+    padding: 15px;
+}
+
+footer input {
+    width: 570px;
+    padding: 10px;
+    outline: none;
+    border-radius: 12px;
+}
+
+footer input i {
+    color: #80817a;
+}
+
+.fa,
+.fas {
+    font-weight: 900;
+    color: #8c979b;
+    padding: 10px;
+}
+
+footer .fas {
+    font-size: 25px;
 }
