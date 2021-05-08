@@ -35,7 +35,7 @@
                     </ul>
 
                 </div>
-                <div class="fontaweson">
+                <div class="fontaweson-sx">
                     <ul>
                         <li>
                             <i class="fas fa-circle-notch"></i>
@@ -76,7 +76,7 @@
             </form>
             <div class="lista-utenti">
                 <ul>
-                    <li v-for="(contact, index) in contacts">
+                    <li v-for="(contact, index) in contacts" :style="(index === contacts.length -1) ? 'border:none' : null">
                         <img :src="image(index)" alt="">
                         <h3>
                             {{contact.name}}
@@ -153,20 +153,29 @@
             </section>
 
             <footer>
-                <ul>
-                    <li>
-                        <i class="fas fa-smile"></i>
+                <div class="smile">
+                    <i class="fas fa-smile"></i>
 
-                    </li>
-                    <li>
-                        <input type="text" placeholder="Scrivi unn messaggio">
+                </div>
 
-                    </li>
-                    <li>
-                        <i class="fas fa-microphone"></i>
 
-                    </li>
-                </ul>
+
+
+
+
+                <input type="text" placeholder="Scrivi unn messaggio">
+
+                <div class="mic">
+                    <i class="fas fa-microphone"></i>
+
+                </div>
+
+
+
+
+
+
+
 
             </footer>
 
