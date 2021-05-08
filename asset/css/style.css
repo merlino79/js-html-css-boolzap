@@ -77,6 +77,7 @@ footer ul,
 .fontaweson i {
     color: #B1B1B1;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 
@@ -152,6 +153,7 @@ form i {
 
 .lista-utenti ul li {
     border-bottom: 1px solid rgb(228, 220, 220);
+    cursor: pointer;
 }
 
 .lista-utenti li {
@@ -160,6 +162,11 @@ form i {
 
 .lista-utenti ul li.last {
     border: 0;
+}
+
+.lista-utenti ul li:hover {
+    opacity: .8;
+    background-color: #80817a52;
 }
 
 
@@ -172,6 +179,7 @@ form i {
 
 .fontaweson-sx {
     float: right;
+    cursor: pointer;
     margin-top: 10px;
     margin-right: 15px;
 }
@@ -212,15 +220,48 @@ main .utente p {
 /* 
 <-----------------> section */
 
+.ac-container {
+    position: relative;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+}
+
 section {
     background-image: url(../../asset/img/mine.jpg);
 }
 
-section .ale-sx,
-section .ale-dx {
-    float: left;
+section .msg-sx {
+    margin-top: 10px;
+}
+
+section .msg-sx i {
+    position: absolute;
+    left: 25%;
+    display: none;
+}
+
+section .msg-sx:hover i {
+    display: block;
+}
+
+section .msg-dx {
+    text-align: end;
     padding: 20px;
-    width: 50%;
+}
+
+section .msg-dx i {
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+
+section .msg-dx:hover i {
+    display: block;
+}
+
+.msg-dx input {
+    background-color: #D5F9BA;
 }
 
 section input {
@@ -244,6 +285,7 @@ footer {
 
 footer .smile {
     width: 10%;
+    cursor: pointer;
 }
 
 footer input {
@@ -261,6 +303,7 @@ footer input i {
 
 footer .mic {
     width: 10%;
+    cursor: pointer;
 }
 
 .fa,
