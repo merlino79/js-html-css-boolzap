@@ -232,23 +232,26 @@ section {
 }
 
 .msg-sent {
+    position: relative;
     float: left;
     clear: both;
+    margin-top: 30px;
     width: 40%;
-    height: 30%;
-    border-radius: 15px;
     padding: 20px;
+    border-radius: 15px;
     background-color: #FFFFFF;
 }
 
-section .msg-sent i {
+.msg-sent i {
     position: absolute;
-    left: 30%;
+    top: 0;
+    left: 80%;
+    color: #544570;
     display: none;
 }
 
 section .msg-sent:hover i {
-    /* display: block; */
+    display: block;
 }
 
 .msg-received {
@@ -268,11 +271,11 @@ section .msg-received i {
     position: absolute;
     right: 5%;
     top: 10%;
-    /* display: none; */
+    display: none;
 }
 
 section .msg-received:hover i {
-    /* display: block; */
+    display: block;
 }
 
 section input {
