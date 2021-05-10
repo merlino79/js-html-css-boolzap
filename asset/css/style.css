@@ -222,47 +222,57 @@ main .utente p {
 <-----------------> section */
 
 .ac-container {
-    position: relative;
     width: 80%;
-    height: 100px;
     margin: 0 auto;
+    overflow-y: scroll;
 }
 
 section {
     background-image: url(../../asset/img/mine.jpg);
 }
 
-section .msg-sx {
-    margin-top: 10px;
+.msg-sent {
+    float: left;
+    clear: both;
+    width: 40%;
+    height: 30%;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #FFFFFF;
 }
 
-section .msg-sx i {
+section .msg-sent i {
     position: absolute;
-    left: 37%;
+    left: 30%;
     display: none;
 }
 
-section .msg-sx:hover i {
-    display: block;
+section .msg-sent:hover i {
+    /* display: block; */
 }
 
-section .msg-dx {
+.msg-received {
+    position: relative;
+    float: right;
+    clear: both;
+    width: 40%;
+    height: 30%;
+    border-radius: 15px;
+    background-color: #D5F9BA;
     text-align: end;
     padding: 20px;
+    margin-top: 40px;
 }
 
-section .msg-dx i {
+section .msg-received i {
     position: absolute;
     right: 5%;
-    display: none;
+    top: 10%;
+    /* display: none; */
 }
 
-section .msg-dx:hover i {
-    display: block;
-}
-
-.msg-dx input {
-    background-color: #D5F9BA;
+section .msg-received:hover i {
+    /* display: block; */
 }
 
 section input {
