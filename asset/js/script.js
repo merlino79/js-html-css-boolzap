@@ -98,9 +98,7 @@ const root = new Vue({
 
     },
     methods: {
-        image(index) {
-            return `asset/img/avatar${this.contacts[index].avatar}.jpg`
-        },
+
 
 
     }
