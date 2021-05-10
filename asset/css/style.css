@@ -262,7 +262,6 @@ section .msg-sent:hover i {
     height: 30%;
     border-radius: 15px;
     background-color: #D5F9BA;
-    text-align: end;
     padding: 20px;
     margin-top: 40px;
 }
