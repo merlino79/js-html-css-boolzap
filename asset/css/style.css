@@ -134,6 +134,7 @@ form input {
     border-radius: 7px;
     color: #6a7045;
     background-color: white;
+    border: 1px solid #b0afaa;
 }
 
 form i {
@@ -237,7 +238,7 @@ section .msg-sx {
 
 section .msg-sx i {
     position: absolute;
-    left: 25%;
+    left: 37%;
     display: none;
 }
 

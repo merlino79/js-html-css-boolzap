@@ -1,8 +1,14 @@
 const root = new Vue({
     el: '#root',
     data: {
+        user: {
+            name: 'nome utente',
+            avatar: '_io',
+        },
 
-        messaggio: "ciao",
+
+
+
 
 
         contacts: [{
