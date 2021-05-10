@@ -163,13 +163,13 @@ form i {
     display: flex;
 }
 
-.lista-utenti ul li.last {
-    border: 0;
-}
-
 .lista-utenti ul li:hover {
     opacity: .8;
     background-color: #80817a52;
+}
+
+.lista-utenti ul li:active {
+    background-color: #249688;
 }
 
 

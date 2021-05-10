@@ -142,8 +142,11 @@
             <section>
                 <div class="ac-container">
 
-                    <div class="msg-received">
-                        <span>prova messaggio</span>
+                    <div class="msg-received" v-for="message in contacts.messages">
+                        <span>
+                             {{message.text}}
+                    
+                        </span>
                         <span class="mes-time">10/01/2020 15:30:55</span>
                         <i class="fas fa-angle-down"></i>
 
@@ -162,7 +165,9 @@
 
 
                     <div class="msg-sent">
-                        <span class="mes-txt">Lorem, ipsum dolor sit amet ?</span>
+                        <span class="mes-txt">
+                            {{contacts.name}}
+                        </span>
                         <span class="mes-time">10/01/2020 15:30:55</span>
                         <i class="fas fa-angle-down"></i>
 
