@@ -76,7 +76,9 @@
             </form>
             <div class="lista-utenti">
                 <ul>
-                    <li v-for="(contact, index) in contacts" :style="(index === contacts.length -1) ? 'border:none' : null">
+                    <li v-for="(contact, index) in contacts" :class="index ===   activeUser ? 'active' : '' " @click="addClass(index)">
+
+
                         <img :src="'asset/img/avatar' + contact.avatar +'.jpg'" :alt="contact.name">
 
                         <h3>
@@ -111,11 +113,13 @@
                 <div class="utente">
                     <ul>
                         <li>
-                            <img src="asset/img/avatar_io.jpg" alt="avatar io">
+                            <img :src="'asset/img/avatar' + contacts[activeUser].avatar +'.jpg'">
 
                         </li>
                         <li>
-                            <h3>Michele</h3>
+                            <h3>
+                                {{contacts[activeUser].name}}
+                            </h3>
                             <p>Ultimo acceso oggi alle</p>
                         </li>
                     </ul>
@@ -142,8 +146,8 @@
             <section>
                 <div class="ac-container">
 
-                    <div class="msg-received" v-for="message in contacts.messages">
-                        <span>
+                    <div class="msg-received">
+                        <span v-for="message in messages">
                              {{message.text}}
                     
                         </span>

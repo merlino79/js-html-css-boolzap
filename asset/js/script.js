@@ -91,13 +91,21 @@ const root = new Vue({
                     }
                 ],
             },
-        ]
+        ],
+        activeUser: 0,
 
 
 
 
     },
     methods: {
+        addClass(index) {
+            //console.log('pos', index);
+            this.activeUser = index;
+
+
+        }
+
 
 
 

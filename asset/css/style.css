@@ -156,19 +156,23 @@ form i {
 
 .lista-utenti ul li {
     border-bottom: 1px solid rgb(228, 220, 220);
-    cursor: pointer;
 }
 
 .lista-utenti li {
     display: flex;
 }
 
+.lista-utenti ul li:last-child {
+    border: none;
+}
+
 .lista-utenti ul li:hover {
     opacity: .8;
     background-color: #80817a52;
+    cursor: pointer;
 }
 
-.lista-utenti ul li:active {
+.active {
     background-color: #249688;
 }
 
