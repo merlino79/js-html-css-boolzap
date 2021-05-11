@@ -146,34 +146,35 @@
             <section>
                 <div class="ac-container">
 
-                    <div class="msg-received">
-                        <span v-for="message in messages">
-                             {{message.text}}
+                    <div class="msg-received" v-for="message in contacts[activeUser].messages">
+                        <span class="message-text">
+                            {{message.text}}
+                          
+                         
                     
                         </span>
-                        <span class="mes-time">10/01/2020 15:30:55</span>
+                        <span class="mes-time">
+                            {{message.date}}
+                        </span>
                         <i class="fas fa-angle-down"></i>
 
 
                     </div>
-                    <div class="msg-received">
-                        <span>prova messaggio</span>
-                        <span class="mes-time">10/01/2020 15:30:55</span>
 
-
-                        <i class="fas fa-angle-down"></i>
-
-
-                    </div>
 
 
 
                     <div class="msg-sent">
-                        <span class="mes-txt">
-                            {{contacts.name}}
+                        <span>
+                            
+                          
                         </span>
-                        <span class="mes-time">10/01/2020 15:30:55</span>
-                        <i class="fas fa-angle-down"></i>
+                        <!-- <span class="mes-time">
+                          18.12.79
+                           
+                           
+                        </span>
+                        <i class="fas fa-angle-down "></i> -->
 
 
                     </div>
@@ -187,8 +188,8 @@
             </section>
 
             <footer>
-                <div class="smile">
-                    <i class="fas fa-smile"></i>
+                <div class="smile ">
+                    <i class="fas fa-smile "></i>
 
                 </div>
 
@@ -197,10 +198,10 @@
 
 
 
-                <input type="text" placeholder="Scrivi un messaggio">
+                <input type="text " placeholder="Scrivi un messaggio ">
 
-                <div class="mic">
-                    <i class="fas fa-microphone"></i>
+                <div class="mic ">
+                    <i class="fas fa-microphone "></i>
 
                 </div>
 
@@ -225,7 +226,7 @@
 
 
 
-    <script src="asset/js/script.js"></script>
+    <script src="asset/js/script.js "></script>
 
 
 </body>
