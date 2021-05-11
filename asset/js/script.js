@@ -1,6 +1,11 @@
 const root = new Vue({
     el: '#root',
     data: {
+
+
+        mess: '',
+
+
         user: {
             name: 'nome utente',
             avatar: '_io',
