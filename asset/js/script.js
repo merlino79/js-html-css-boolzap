@@ -8,6 +8,7 @@ const root = new Vue({
 
 
 
+
         user: {
             name: 'nome utente',
             avatar: '_io',
@@ -117,6 +118,7 @@ const root = new Vue({
             this.contacts[this.numberUser].messages.push({
                 text: this.mess,
 
+
                 status: 'sent',
 
             })
@@ -124,6 +126,13 @@ const root = new Vue({
             this.mess = '';
 
             console.log(this.mess);
+            setTimeout(() => {
+                this.contacts[this.numberUser].messages.push({
+                    date: this.now,
+                    text: 'ok',
+                    status: 'received'
+                })
+            }, 1000)
 
 
         }
