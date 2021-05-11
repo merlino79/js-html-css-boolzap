@@ -149,7 +149,7 @@
                     <div v-for="message in contacts[activeUser].messages" :class="(message.status === 'received') ? 'msg-sent' : 'msg-received'">
                         <span class="message-text">
                             {{message.text}}
-                            {{mess}}
+                          
                           
                          
                     
@@ -167,6 +167,7 @@
 
                     <!-- <div class="msg-sent">
                         <span>
+                            {{mess}}
                             
                           
                         </span>
@@ -178,8 +179,8 @@
                         <i class="fas fa-angle-down "></i>
 
 
-                    </div> -->
-
+                    </div>
+ -->
 
 
                 </div>
@@ -199,7 +200,7 @@
 
 
 
-                <input type="text " v-model='mess' placeholder="Scrivi un messaggio ">
+                <input type="text " v-model='mess' @keyup.enter="addMess" placeholder="Scrivi un messaggio ">
 
                 <div class="mic ">
                     <i class="fas fa-microphone "></i>

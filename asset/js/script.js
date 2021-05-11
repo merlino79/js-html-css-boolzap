@@ -4,6 +4,8 @@ const root = new Vue({
 
 
         mess: '',
+        numberUser: 0,
+
 
 
         user: {
@@ -107,6 +109,21 @@ const root = new Vue({
         addClass(index) {
             //console.log('pos', index);
             this.activeUser = index;
+
+
+        },
+
+        addMess() {
+            this.contacts[this.numberUser].messages.push({
+                text: this.mess,
+
+                status: 'sent',
+
+            })
+
+            this.mess = '';
+
+            console.log(this.mess);
 
 
         }
