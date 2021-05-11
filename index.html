@@ -146,7 +146,7 @@
             <section>
                 <div class="ac-container">
 
-                    <div class="msg-received" v-for="message in contacts[activeUser].messages">
+                    <div v-for="message in contacts[activeUser].messages" :class="(message.status === 'received') ? 'msg-sent' : 'msg-received'">
                         <span class="message-text">
                             {{message.text}}
                           
@@ -164,20 +164,20 @@
 
 
 
-                    <div class="msg-sent">
+                    <!-- <div class="msg-sent">
                         <span>
                             
                           
                         </span>
-                        <!-- <span class="mes-time">
+                        <span class="mes-time">
                           18.12.79
                            
                            
                         </span>
-                        <i class="fas fa-angle-down "></i> -->
+                        <i class="fas fa-angle-down "></i>
 
 
-                    </div>
+                    </div> -->
 
 
 
