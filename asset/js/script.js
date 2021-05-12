@@ -4,7 +4,7 @@ const root = new Vue({
 
 
         mess: '',
-        now: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
+        now: dayjs().format('DD/MM/YYYY HH:mm:ss'),
         // nowDue: dayjs().format('ddd MM MMMM YYYY'),
         risposte: ['andiamo al mare', 'cosa stai dicendo', 'siamo soli', 'hai fatto i compiti?', 'vorrei giocare con te', 'no!!', ],
 
@@ -141,7 +141,7 @@ const root = new Vue({
         },
         puschMessage(text, status) {
             this.contacts[this.activeUser].messages.push({
-                date: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
+                date: dayjs().format('DD/MM/YYY HH:mm:ss'),
                 text: text,
                 status: status
 
@@ -174,11 +174,11 @@ const root = new Vue({
 
     },
     mounted() {
-        //console.log('ciao ale');
-        // setInterval(() => {
-        //     this.now = dayjs().format('ddd MM MMMM YYYY HH:mm:ss');
-        // }, 1000)
-        // console.log(Math.floor(Math.random() * this.risposte.length));
+        console.log('ciao ale');
+        setInterval(() => {
+            this.now = dayjs().format('DD/MM/YYYY HH:mm:ss');
+        }, 1000)
+        console.log(Math.floor(Math.random() * this.risposte.length));
     }
 });
 
