@@ -158,6 +158,12 @@ const root = new Vue({
         },
         lastMess(index) {
             let contacMesg = this.contacts[index].messages;
+            //se il msg è più lungo di 20 caratteri li tronco e aggiungo i puntini 
+            if (contacMesg[contacMesg.length - 1].text.length > 30) {
+                let sliceMsg = contacMesg[contacMesg.length - 1].text.slice(0, 20) + "...";
+                return sliceMsg
+
+            }
             return contacMesg[contacMesg.length - 1].text;
 
         },
