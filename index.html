@@ -200,7 +200,7 @@
 
 
 
-                <input type="text " v-model='mess' @keyup.enter="addMess" placeholder="Scrivi un messaggio ">
+                <input type="text " v-model.trim='mess' @keyup.enter="addMess" placeholder="Scrivi un messaggio ">
 
                 <div class="mic ">
                     <i class="fas fa-microphone "></i>
@@ -229,6 +229,11 @@
     <!-- day js -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.4/dayjs.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.4/locale/it.js"></script>
+
+    <script>
+        dayjs.locale('it')
+    </script>
 
     <script src="asset/js/script.js "></script>
 

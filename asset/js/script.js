@@ -4,7 +4,7 @@ const root = new Vue({
 
 
         mess: '',
-        numberUser: 0,
+
 
 
 
@@ -115,8 +115,10 @@ const root = new Vue({
         },
 
         addMess() {
-            this.contacts[this.numberUser].messages.push({
+            this.contacts[this.activeUser].messages.push({
                 text: this.mess,
+                date: 'xxxxxxx',
+
 
 
                 status: 'sent',
@@ -140,7 +142,10 @@ const root = new Vue({
 
 
 
+    },
+    mounted() {
+        //console.log('ciao ale');
     }
-})
+});
 
 //console.log(root);
