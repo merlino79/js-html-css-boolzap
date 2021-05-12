@@ -156,6 +156,11 @@ const root = new Vue({
             //console.log(contact);//messaggi visti i consol.log in array
 
         },
+        lastMess(index) {
+            let contacMesg = this.contacts[index].messages;
+            return contacMesg[contacMesg.length - 1].text;
+
+        },
 
 
 
