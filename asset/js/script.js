@@ -115,28 +115,29 @@ const root = new Vue({
         },
 
         addMess() {
-            this.contacts[this.activeUser].messages.push({
-                text: this.mess,
-                date: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
-
-
-
-                status: 'sent',
-
-            })
-
+            this.puschMessage(this.mess, 'sent');
             this.mess = '';
 
-            console.log(this.mess);
-            setTimeout(() => {
-                this.contacts[this.activeUser].messages.push({
-                    date: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
-                    text: 'ok',
-                    status: 'received'
-                })
-            }, 1000)
 
 
+            //console.log(this.mess);
+            // setTimeout(() => {
+            //     this.contacts[this.activeUser].messages.push({
+            //         date: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
+            //         text: 'ok',
+            //         status: 'received'
+            //     })
+            // }, 1000)
+
+
+        },
+        puschMessage(text, status) {
+            this.contacts[this.activeUser].messages.push({
+                date: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
+                text: text,
+                status: status
+
+            });
         }
 
 
