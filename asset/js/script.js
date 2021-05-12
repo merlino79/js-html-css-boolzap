@@ -6,7 +6,7 @@ const root = new Vue({
         mess: '',
         now: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
         // nowDue: dayjs().format('ddd MM MMMM YYYY'),
-        risposte: ['andiamo al mare', 'cosa stai deicendo', 'siamo soli', 'hai fatto i compiti?', 'vorrei giocare con te'],
+        risposte: ['andiamo al mare', 'cosa stai dicendo', 'siamo soli', 'hai fatto i compiti?', 'vorrei giocare con te', 'no', ],
 
 
 
@@ -123,12 +123,11 @@ const root = new Vue({
                 this.mess = '';
 
                 //console.log(this.mess);
+                //invio del boot
                 setTimeout(() => {
-                    this.contacts[this.activeUser].messages.push({
-                        date: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
-                        text: this.risposte,
-                        status: 'received'
-                    })
+                    let risp = this.risposte[Math.floor(Math.random() * this.risposte.length)]
+                    this.puschMessage(risp, 'received');
+
                 }, 1000);
 
             }
@@ -158,6 +157,7 @@ const root = new Vue({
         // setInterval(() => {
         //     this.now = dayjs().format('ddd MM MMMM YYYY HH:mm:ss');
         // }, 1000)
+        // console.log(Math.floor(Math.random() * this.risposte.length));
     }
 });
 
