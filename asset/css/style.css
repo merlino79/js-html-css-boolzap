@@ -68,6 +68,13 @@ body {
     margin-left: 5px;
 }
 
+.lista-utenti p {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 40px;
+    color: rgb(168, 168, 233);
+}
+
 .utente img {
     width: 50px;
     border-radius: 50%;

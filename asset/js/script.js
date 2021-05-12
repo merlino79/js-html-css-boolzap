@@ -6,7 +6,7 @@ const root = new Vue({
         mess: '',
         now: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
         // nowDue: dayjs().format('ddd MM MMMM YYYY'),
-        risposte: ['andiamo al mare', 'cosa stai dicendo', 'siamo soli', 'hai fatto i compiti?', 'vorrei giocare con te', 'no', ],
+        risposte: ['andiamo al mare', 'cosa stai dicendo', 'siamo soli', 'hai fatto i compiti?', 'vorrei giocare con te', 'no!!', ],
 
 
 
@@ -146,7 +146,17 @@ const root = new Vue({
                 status: status
 
             });
-        }
+        },
+
+        lastAcces(index) {
+            //console.log('ciao ok funziona');
+            let contacMesg = this.contacts[index].messages;
+            return contacMesg[contacMesg.length - 1].date;
+
+            //console.log(contact);//messaggi visti i consol.log in array
+
+        },
+
 
 
 

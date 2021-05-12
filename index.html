@@ -88,6 +88,9 @@
                             {{contact.name}}
 
                         </h3>
+                        <p>
+                            {{lastAcces(index)}}
+                        </p>
 
                     </li>
 
@@ -124,7 +127,7 @@
                                 {{contacts[activeUser].name}}
                             </h3>
                             <p>
-                                ultimo accesso {{now}}
+                                ultimo accesso: {{lastAcces(activeUser)}}
                             </p>
                         </li>
                     </ul>
