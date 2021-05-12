@@ -118,19 +118,25 @@ const root = new Vue({
         },
 
         addMess() {
-            this.puschMessage(this.mess, 'sent');
-            this.mess = '';
+            if (this.mess.length > 0) {
+                this.puschMessage(this.mess, 'sent');
+                this.mess = '';
+
+                //console.log(this.mess);
+                setTimeout(() => {
+                    this.contacts[this.activeUser].messages.push({
+                        date: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
+                        text: this.risposte,
+                        status: 'received'
+                    })
+                }, 1000);
+
+            }
 
 
 
-            console.log(this.mess);
-            setTimeout(() => {
-                this.contacts[this.activeUser].messages.push({
-                    date: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
-                    text: this.risposte,
-                    status: 'received'
-                })
-            }, 1000)
+
+
 
 
         },
