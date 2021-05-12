@@ -4,14 +4,16 @@ const root = new Vue({
 
 
         mess: '',
+        now: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
+        nowDue: dayjs().format('ddd MM MMMM YYYY'),
 
 
 
 
 
         user: {
-            name: 'nome utente',
-            avatar: '_io',
+            name: 'Arsenè',
+            avatar: '_4',
         },
 
 
@@ -85,7 +87,7 @@ const root = new Vue({
             },
             {
                 name: 'Luisa',
-                avatar: '_4',
+                avatar: '_io',
                 visible: true,
                 messages: [{
                         date: '10/01/2020 15:30:55',
@@ -120,14 +122,14 @@ const root = new Vue({
 
 
 
-            //console.log(this.mess);
-            // setTimeout(() => {
-            //     this.contacts[this.activeUser].messages.push({
-            //         date: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
-            //         text: 'ok',
-            //         status: 'received'
-            //     })
-            // }, 1000)
+            console.log(this.mess);
+            setTimeout(() => {
+                this.contacts[this.activeUser].messages.push({
+                    date: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
+                    text: 'ok',
+                    status: 'received'
+                })
+            }, 1000)
 
 
         },
@@ -146,6 +148,9 @@ const root = new Vue({
     },
     mounted() {
         //console.log('ciao ale');
+        setInterval(() => {
+            this.now = dayjs().format('ddd MM MMMM YYYY HH:mm:ss');
+        }, 1000)
     }
 });
 

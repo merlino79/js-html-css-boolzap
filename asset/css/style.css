@@ -57,6 +57,11 @@ body {
     padding: 10px;
 }
 
+.date {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
 .utente ul li h3,
 .lista-utenti li h3 {
     padding: 5px;
