@@ -117,7 +117,7 @@ const root = new Vue({
         addMess() {
             this.contacts[this.activeUser].messages.push({
                 text: this.mess,
-                date: 'xxxxxxx',
+                date: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
 
 
 
@@ -129,8 +129,8 @@ const root = new Vue({
 
             console.log(this.mess);
             setTimeout(() => {
-                this.contacts[this.numberUser].messages.push({
-                    date: this.now,
+                this.contacts[this.activeUser].messages.push({
+                    date: dayjs().format('ddd MM MMMM YYYY HH:mm:ss'),
                     text: 'ok',
                     status: 'received'
                 })
